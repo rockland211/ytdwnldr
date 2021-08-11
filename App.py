@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def YouTube_Downloader():
-        html_page = f"""<%<html><head>
+        html_page = f"""<html><head>
         <Title> YouTube Downloader </Title></head>
         <body  
             style="background-color:DodgerBlue;" >
@@ -27,7 +27,7 @@ def YouTube_Downloader():
             <input type="text" name="URL">
             <input type="submit" value="Submit">
         </form></div> <br><br>
-        </body></html>%>"""
+        </body></html>"""
         return html_page
 
 @app.route('/download_video', methods=['GET', 'POST'])
